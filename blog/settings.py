@@ -43,6 +43,8 @@ INSTALLED_APPS = [
 
     #3rd Party
     'rest_framework',
+    'rest_framework.authtoken', #auth token generator
+    'rest_auth', #For api user registration
 
 ]
 
