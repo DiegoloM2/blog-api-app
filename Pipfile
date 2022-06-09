@@ -4,9 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
+django = "==3.2.10"
 djangorestframework = "*"
 django-rest-auth = "*"
+django-allauth = "*"
+coreapi = "*"
+pyyaml = "*"
 
 [dev-packages]
 

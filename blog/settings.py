@@ -44,7 +44,11 @@ INSTALLED_APPS = [
     #3rd Party
     'rest_framework',
     'rest_framework.authtoken', #auth token generator
-    'rest_auth', #For api user registration
+    'allauth',
+    'allauth.account', 
+    'allauth.socialaccount',
+    'rest_auth', 
+    'rest_auth.registration',
 
 ]
 
@@ -142,3 +146,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication'
     ],
 }
+
+#Allauth:
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # new
+SITE_ID = 1 # new
